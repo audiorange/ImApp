@@ -132,7 +132,7 @@ void MainWindow::frame() {
   // Docking
   constexpr ImGuiDockNodeFlags dockSpaceFlags
       = ImGuiDockNodeFlags_PassthruCentralNode;
-  _dockSpaceId = ImGui::DockSpaceOverViewport(ImGui::GetMainViewport(),
+  _dockSpaceId = ImGui::DockSpaceOverViewport(0,ImGui::GetMainViewport(),
                                               dockSpaceFlags);
 }
 // -----------------------------------------------------------------------------
